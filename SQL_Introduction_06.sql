@@ -1,0 +1,3 @@
+SELECT DISTINCT p.PNAME
+FROM P p 
+WHERE p.COLOR = 'Red' OR p.COLOR = 'Blue';
