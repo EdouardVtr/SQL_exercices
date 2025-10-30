@@ -1,0 +1,3 @@
+SELECT s.SNAME
+FROM S s
+WHERE s.SNAME LIKE 'a%' or s.SNAME LIKE 'c%';
