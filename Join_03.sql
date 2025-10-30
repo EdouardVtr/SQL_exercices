@@ -1,0 +1,4 @@
+SELECT DISTINCT j.JNAME
+FROM SPJ l, J j
+WHERE l.ID_J = j.ID_J
+  AND l.ID_P = 'P3';
