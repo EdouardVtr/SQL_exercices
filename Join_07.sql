@@ -1,0 +1,6 @@
+SELECT DISTINCT s.SNAME NOM, p.PNAME PIECE, j.JNAME PROJET, l.QTY QUANTITE
+FROM S s, P p, J j, SPJ l
+WHERE s.ID_S = l.ID_S
+  AND p.ID_P = l.ID_P
+  AND j.ID_J = l.ID_J
+  AND s.CITY = 'Paris';
