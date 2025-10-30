@@ -1,0 +1,5 @@
+SELECT DISTINCT l1.ID_S
+FROM SPJ l1, SPJ l2
+WHERE l1.ID_S = l2.ID_S
+  AND l1.ID_P = l2.ID_P
+  AND l1.ID_J <> l2.ID_J
