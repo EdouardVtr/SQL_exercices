@@ -1,0 +1,4 @@
+SELECT DISTINCT ea2.SSN2
+FROM EstAmi ea1, EstAmi ea2
+WHERE ea1.SSN2 = ea2.SSN1
+  AND ea1.SSN1 = 'P1';
