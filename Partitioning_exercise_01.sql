@@ -1,0 +1,3 @@
+SELECT COUNT(l.QTY) Livraisons, l.QTY
+FROM SPJ l
+GROUP BY l.QTY;
