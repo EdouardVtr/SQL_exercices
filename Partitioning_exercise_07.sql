@@ -1,0 +1,3 @@
+SELECT l.ID_J, l.ID_P, SUM(l.QTY) TOTAL
+FROM SPJ l
+GROUP BY l.ID_J, l.ID_P;
