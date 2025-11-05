@@ -1,0 +1,4 @@
+SELECT j.JNAME, SUM(l.QTY) Nb_Pièces 
+FROM SPJ l, J j
+WHERE l.ID_J = j.ID_J
+GROUP BY l.ID_J;
