@@ -1,0 +1,4 @@
+SELECT li.ID_P, li.ID_J
+FROM SPJ li
+GROUP BY li.ID_J, li.ID_P
+HAVING AVG(li.QTY) > 320;
