@@ -1,0 +1,4 @@
+SELECT li.ID_S
+FROM SPJ li
+GROUP BY li.ID_S, li.ID_P
+HAVING COUNT(li.ID_J) >= 3;
