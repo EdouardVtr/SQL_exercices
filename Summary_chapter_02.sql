@@ -1,0 +1,4 @@
+SET GLOBAL SQL_MODE = CONCAT(@@SQL_MODE, ',ONLY_FULL_GROUP_BY');
+
+SELECT MIN(p.Age) Youngest
+FROM personne p;
