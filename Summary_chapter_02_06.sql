@@ -1,0 +1,4 @@
+SET GLOBAL SQL_MODE = CONCAT(@@SQL_MODE, ',ONLY_FULL_GROUP_BY');
+
+SELECT COUNT(d.Destinataire) / COUNT(DISTINCT d.ID_Message)
+FROM destinataires d
