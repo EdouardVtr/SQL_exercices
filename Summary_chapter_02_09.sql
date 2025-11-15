@@ -1,0 +1,4 @@
+SELECT ea.SSN1
+FROM EstAmi ea
+GROUP BY ea.SSN1
+HAVING (COUNT(ea.SSN2) >= 1 AND COUNT(ea.SSN2) <= 2);
