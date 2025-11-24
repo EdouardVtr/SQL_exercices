@@ -1,0 +1,8 @@
+SET GLOBAL SQL_MODE = CONCAT(@@SQL_MODE, ',ONLY_FULL_GROUP_BY');
+
+SELECT li.ID_S, AVG(li.QTY) AS Moyenne
+FROM SPJ li, S s
+WHERE li.ID_S = s.ID_S
+  AND s.CITY = 'London'
+GROUP BY li.ID_S 
+HAVING SUM(li.QTY) > 800;
